@@ -1,18 +1,106 @@
+/* General styling */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow: hidden;
+    font-family: 'Arial', sans-serif;
 }
 
 body {
-    background-color: #87CEEB;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    background-color: #0d0d0d;
+    color: #fff;
+    line-height: 1.6;
 }
 
-canvas {
-    display: block;
+/* Navbar styling */
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: #111;
+    box-shadow: 0 2px 10px #000;
+}
+
+.navbar a {
+    color: #ddd;
+    text-decoration: none;
+    padding: 8px 15px;
+}
+
+.navbar input {
+    padding: 5px;
+    border-radius: 5px;
+    background: #222;
+    color: #fff;
+}
+
+/* Hero section */
+.hero-section {
+    text-align: center;
+    padding: 60px;
+    background: url('https://via.placeholder.com/1000x500') no-repeat center/cover;
+    box-shadow: 0 0 30px #00ffcc;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: #00ffcc;
+    text-shadow: 0 0 15px #00ffcc;
+}
+
+.hero-section button {
+    background-color: #ff007f;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+/* Product card styling */
+.products {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    background-color: #222;
+    border: 1px solid #444;
+    padding: 15px;
+    border-radius: 10px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 0 15px #00ffcc;
+    transition: transform 0.3s ease;
+}
+
+.product-card img {
+    width: 100%;
+    border-bottom: 1px solid #444;
+    margin-bottom: 10px;
+}
+
+.product-card button {
+    background-color: #00ffcc;
+    color: #111;
+    padding: 8px 15px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 0 10px #00ffcc;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #111;
 }
