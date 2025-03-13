@@ -3,14 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stickman Runner Game</title>
+    <title>Midnight Store</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <canvas id="gameCanvas"></canvas>
 
-    <script src="three.min.js"></script>
-    <script src="cannon.min.js"></script>
-    <script src="game.js"></script>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="#">Home</a>
+        <a href="#">Store</a>
+        <a href="#">Products</a>
+        <a href="#">Reviews</a>
+        <a href="#">Contact</a>
+        <input type="text" placeholder="Search...">
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-section">
+        <h1>Welcome to Midnight Store</h1>
+        <p>Your one-stop destination for modern products</p>
+        <button onclick="shopNow()">Shop Now</button>
+    </header>
+
+    <!-- Product Section -->
+    <section class="products">
+        <div class="product-card">
+            <img src="https://via.placeholder.com/150" alt="Product 1">
+            <h3>Neon Headphones</h3>
+            <p>$25.00</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://via.placeholder.com/150" alt="Product 2">
+            <h3>Futuristic Clock</h3>
+            <p>$35.00</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://via.placeholder.com/150" alt="Product 3">
+            <h3>Luxury Watch</h3>
+            <p>$45.00</p>
+            <button>Add to Cart</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Midnight Store. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
