@@ -1,15 +1,10 @@
-/* General Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 /* Body Styling */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Poppins', sans-serif;
     background-color: #0d0d0d;
     color: #fff;
+    margin: 0;
+    padding: 0;
 }
 
 /* Navbar Styling */
@@ -17,17 +12,25 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 10px;
-    background-color: #111;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.9);
     box-shadow: 0 2px 10px #000;
     position: sticky;
     top: 0;
+    z-index: 10;
 }
 
 .navbar a {
     color: #ddd;
     text-decoration: none;
     padding: 8px 15px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #00ffcc;
+    text-shadow: 0 0 15px #00ffcc;
 }
 
 .navbar input {
@@ -43,15 +46,16 @@ body {
     text-align: center;
     padding: 80px;
     background: url('store-background.jpg') no-repeat center/cover;
+    background-size: cover;
     box-shadow: 0 0 30px #00ffcc;
     animation: fadeIn 1s ease-in;
 }
 
 .hero-section h1 {
-    font-size: 3.5rem;
+    font-size: 4rem;
     margin-bottom: 10px;
     color: #00ffcc;
-    text-shadow: 0 0 15px #00ffcc;
+    text-shadow: 0 0 20px #00ffcc;
 }
 
 .hero-section p {
@@ -67,6 +71,13 @@ body {
     border: none;
     cursor: pointer;
     font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.hero-section button:hover {
+    background: #00ffcc;
+    color: #111;
+    box-shadow: 0 0 15px #00ffcc;
 }
 
 /* Product Section */
@@ -83,7 +94,7 @@ body {
     border: 1px solid #444;
     padding: 15px;
     border-radius: 10px;
-    width: 200px;
+    width: 220px;
     text-align: center;
     box-shadow: 0 0 15px #00ffcc;
     transition: transform 0.3s ease;
@@ -95,6 +106,17 @@ body {
     margin-bottom: 10px;
 }
 
+.product-card h2 {
+    font-size: 1.2rem;
+    color: #fff;
+    margin: 5px 0;
+}
+
+.product-card p {
+    color: #00ffcc;
+    font-weight: bold;
+}
+
 .product-card button {
     background-color: #00ffcc;
     color: #111;
@@ -103,10 +125,12 @@ body {
     cursor: pointer;
     font-weight: bold;
     box-shadow: 0 0 10px #00ffcc;
+    transition: 0.3s ease;
 }
 
-.product-card:hover {
-    transform: scale(1.05);
+.product-card button:hover {
+    background: #ff007f;
+    color: #fff;
 }
 
 /* Footer Styling */
@@ -129,7 +153,7 @@ footer {
 /* Responsive Design */
 @media (max-width: 768px) {
     .hero-section h1 {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 
     .products {
